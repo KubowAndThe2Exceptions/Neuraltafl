@@ -321,11 +321,13 @@ namespace NeuralTaflGame
 
             List<String> validMoves = new List<String>();
 
+            //Determines horizontal moves of piece (I think) ~RK
             for (int i = 0; i < boardArray.Count(); i++)
             {
                 validMoves.Add(i + "," + piece.column);
             }
-
+            
+            //Determines vertical moves of piece (I think) ~RK
             for (int j = 0; j < boardArray[0].Count(); j++)
             {
                 validMoves.Add(piece.row + "," + j);
